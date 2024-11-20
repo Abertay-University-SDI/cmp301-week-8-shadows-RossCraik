@@ -18,6 +18,8 @@ public:
 
 	bool frame();
 
+	int movement = 0;
+
 protected:
 	bool render();
 	void depthPass();
@@ -27,6 +29,8 @@ protected:
 private:
 	TextureShader* textureShader;
 	PlaneMesh* mesh;
+	CubeMesh* cube;
+	SphereMesh* sphere;
 
 	Light* light;
 	AModel* model;
